@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+const form = document.getElementById('inquiryForm');
+if (form) {
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+alert('ધન્યવાદ! તમારી ઇન્કવાયરી અમને મળી ગઈ છે. શ્રધ્ધા સોલાર ટીમ ટૂંક સમયમાં તમારો સંપર્ક કરશે.');
+form.reset();
+});
+}
+});

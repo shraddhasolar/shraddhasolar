@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>શ્રધ્ધા સોલાર - હોમ પેજ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">શ્રધ્ધા સોલાર</div>
+<nav>
+<a href="index.html">હોમ</a>
+<a href="services.html">સર્વિસિસ</a>
+<a href="installation.html">ઇન્સ્ટોલેશન</a>
+<a href="inquiry.html">ઇન્કવાયરી</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>શ્રધ્ધા સોલારમાં તમારું સ્વાગત છે</h1>
+<p>સૂર્ય ઉર્જા અપનાવો, વીજળી બિલ ઘટાડો અને પર્યાવરણ બચાવો.</p>
+</section>
+
+<div class="container">
+<h2 style="text-align: center;">અમારી મુખ્ય સેવાઓ</h2>
+<div class="grid">
+<div class="card">
+<h3>રેસિડેન્શિયલ સોલાર</h3>
+<p>ઘર માટે સોલાર પેનલ સિસ્ટમ ઇન્સ્ટોલેશન સેવાઓ.</p>
+</div>
+<div class="card">
+<h3>કોમર્શિયલ સોલાર</h3>
+<p>ઓફિસ, ફેક્ટરી અને દુકાનો માટે મોટા પાયે સોલાર પ્લાન્ટ.</p>
+</div>
+<div class="card">
+<h3>મેન્ટેનન્સ & સર્વિસ</h3>
+<p>સોલાર પેનલ ક્લીનિંગ અને નિયમિત જાળવણી.</p>
+</div>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2026 શ્રધ્ધા સોલાર. સર્વાધિકાર સુરક્ષિત.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

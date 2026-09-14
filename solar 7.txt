@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ઇન્સ્ટોલેશન સર્વિસ - શ્રધ્ધા સોલાર</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">શ્રધ્ધા સોલાર</div>
+<nav>
+<a href="index.html">હોમ</a>
+<a href="services.html">સર્વિસિસ</a>
+<a href="installation.html">ઇન્સ્ટોલેશન</a>
+<a href="inquiry.html">ઇન્કવાયરી</a>
+</nav>
+</header>
+
+<div class="container">
+<h1 style="text-align: center;">સોલાર ઇન્સ્ટોલેશન પ્રક્રિયા</h1>
+<p style="text-align: center; margin-bottom: 30px;">અમે શ્રેષ્ઠ ગુણવત્તા અને સલામતી સાથે ઇન્સ્ટોલેશન કરી આપીએ છીએ.</p>
+
+<div class="grid">
+<div class="card">
+<h3>1. જગ્યાનું સરવે (Site Survey)</h3>
+<p>અમારા એન્જિનિયર તમારા છતની જગ્યા અને સૂર્યપ્રકાશનું નિરીક્ષણ કરશે.</p>
+</div>
+<div class="card">
+<h3>2. ડિઝાઈન અને પ્લાનિંગ</h3>
+<p>તમારી જરૂરિયાત મુજબ સોલાર સિસ્ટમની ડિઝાઈન તૈયાર કરવામાં આવે છે.</p>
+</div>
+<div class="card">
+<h3>3. પ્રોફેશનલ ઇન્સ્ટોલેશન</h3>
+<p>અનુભવી ટેકનિશિયન દ્વારા સેફ્ટી સાથે સોલાર પેનલનું ફિટિંગ.</p>
+</div>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2026 શ્રધ્ધા સોલાર. સર્વાધિકાર સુરક્ષિત.</p>
+</footer>
+
+</body>
+</html>

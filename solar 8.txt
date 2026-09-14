@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ઇન્કવાયરી કરો - શ્રધ્ધા સોલાર</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">શ્રધ્ધા સોલાર</div>
+<nav>
+<a href="index.html">હોમ</a>
+<a href="services.html">સર્વિસિસ</a>
+<a href="installation.html">ઇન્સ્ટોલેશન</a>
+<a href="inquiry.html">ઇન્કવાયરી</a>
+</nav>
+</header>
+
+<div class="container">
+<h1 style="text-align: center; margin-bottom: 20px;">સોલાર ઇન્કવાયરી ફોર્મ</h1>
+
+<div class="card" style="max-width: 600px; margin: 0 auto;">
+<form id="inquiryForm">
+<div class="form-group">
+<label for="name">તમારું નામ:</label>
+<input type="text" id="name" required placeholder="નામ લખો">
+</div>
+
+<div class="form-group">
+<label for="phone">મોબાઈલ નંબર:</label>
+<input type="tel" id="phone" required placeholder="મોબાઈલ નંબર લખો">
+</div>
+
+<div class="form-group">
+<label for="service">સર્વિસ પસંદ કરો:</label>
+<select id="service">
+<option value="residential">રેસિડેન્શિયલ સોલાર</option>
+<option value="commercial">કોમર્શિયલ સોલાર</option>
+<option value="maintenance">મેન્ટેનન્સ & સર્વિસ</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="message">સંદેશ / સરનામું:</label>
+<textarea id="message" rows="4" placeholder="તમારી જરૂરિયાત જણાવો"></textarea>
+</div>
+
+<button type="submit" class="btn">ઇન્કવાયરી મોકલો</button>
+</form>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2026 શ્રધ્ધા સોલાર. સર્વાધિકાર સુરક્ષિત.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

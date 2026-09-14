@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>શ્રદ્ધા સોલાર - શ્રેષ્ઠ સોલાર સોલ્યુશન્સ</title>
+<!-- Google Fonts for Gujarati & English -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* CSS STYLES */
+:root {
+--primary-color: #ff9900;
+--secondary-color: #004d40;
+--dark-color: #333;
+--light-bg: #f4f7f6;
+--white: #ffffff;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Noto Sans Gujarati', 'Poppins', sans-serif;
+}
+
+body {
+line-height: 1.6;
+color: var(--dark-color);
+background-color: var(--light-bg);
+}
+
+/* Header & Navigation */
+header {
+background-color: var(--white);
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 15px 20px;
+}
+
+.logo {
+font-size: 24px;
+font-weight: 700;
+color: var(--secondary-color);
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.logo span {
+color: var(--primary-color);
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: var(--dark-color);
+font-weight: 600;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: var(--primary-color);
+}
+
+/* Hero / Home Section */
+#home {
+background: linear-gradient(rgba(0, 77, 64, 0.8), rgba(0, 77, 64, 0.8)),
+url('https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80');
+background-size: cover;
+background-position: center;
+color: var(--white);
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 0 20px;
+margin-top: 60px;
+}
+
+#home h1 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+#home p {
+font-size: 20px;
+max-width: 700px;
+margin-bottom: 25px;
+}
+
+.btn {
+background-color: var(--primary-color);
+color: var(--white);
+padding: 12px 30px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: #e68a00;
+}
+
+/* Section Layouts */
+section {
+padding: 80px 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.section-title {
+text-align: center;
+font-size: 32px;
+color: var(--secondary-color);
+margin-bottom: 40px;
+position: relative;
+}
+
+.section-title::after {
+content: '';
+width: 60px;
+height: 4px;
+background-color: var(--primary-color);
+display: block;
+margin: 8px auto 0;
+border-radius: 2px;
+}
+
+/* Services Section */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 25px;
+}
+
+.service-card {
+background: var(--white);
+padding: 30px 20px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+text-align: center;
+transition: 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+.service-card h3 {
+color: var(--secondary-color);
+margin-bottom: 15px;
+}
+
+/* Installation Section */
+.process-steps {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.step {
+background: var(--white);
+padding: 25px;
+border-left: 5px solid var(--primary-color);
+border-radius: 5px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.step-num {
+font-size: 24px;
+font-weight: bold;
+color: var(--primary-color);
+margin-bottom: 10px;
+}
+
+/* Contact & Inquiry Section */
+.contact-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 40px;
+background: var(--white);
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contact-info h3 {
+color: var(--secondary-color);
+margin-bottom: 15px;
+}
+
+.contact-info p {
+margin-bottom: 15px;
+}
+
+.inquiry-form form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 15px;
+}
+
+/* Footer */
+footer {
+background-color: var(--secondary-color);
+color: var(--white);
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+
+/* Responsive Mobile Menu */
+@media (max-width: 768px) {
+.nav-links {
+flex-direction: column;
+gap: 10px;
+text-align: center;
+}
+nav {
+flex-direction: column;
+gap: 15px;
+}
+#home h1 {
+font-size: 30px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Header Navigation -->
+<header>
+<nav>
+<div class="logo">
+☀️ શ્રદ્ધા <span>સોલાર</span>
+</div>
+<ul class="nav-links">
+<li><a href="#home">હોમ</a></li>
+<li><a href="#services">સર્વિસિસ</a></li>
+<li><a href="#installation">ઇન્સ્ટોલેશન</a></li>
+<li><a href="#contact">અમારો સંપર્ક કરો</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+<h1>સૂર્ય ઊર્જા અપનાવો, વીજળી બિલ ઘટાડો!</h1>
+<p>શ્રદ્ધા સોલાર સાથે મેળવો ઉત્તમ ગુણવત્તાવાળા સોલાર પેનલ અને સરકારી સબસિડીનો લાભ.</p>
+<a href="#contact" class="btn">મફત ઇન્ક્વાયરી કરો</a>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+<h2 class="section-title">અમારી સેવાઓ (Services)</h2>
+<div class="services-grid">
+<div class="service-card">
+<h3>🏠 રેસિડેન્શિયલ સોલાર</h3>
+<p>ઘરના ધાબા માટે 1kW થી 10kW સુધીના સોલાર સિસ્ટમ ઇન્સ્ટોલેશન સરકારી સબસિડી સાથે.</p>
+</div>
+<div class="service-card">
+<h3>🏭 કમર્શિયલ સોલાર</h3>
+<p>દુકાન, ફેક્ટરી અને ઓફિસ માટે હાઇ-કેપેસિટી સોલાર પ્લાન્ટ જે ટેક્સ બચાવવામાં મદદ કરે છે.</p>
+</div>
+<div class="service-card">
+<h3>🌾 સોલાર વોટર પંપ</h3>
+<p>ખેતીવાડી અને સિંચાઈ માટે શ્રેષ્ઠ સોલાર વોટર પંપ સિસ્ટમ.</p>
+</div>
+<div class="service-card">
+<h3>🛠️ મેન્ટેનન્સ & સર્વિસિંગ</h3>
+<p>જૂની સોલાર સિસ્ટમનું રિપેરિંગ, સોલાર પેનલ સફાઈ અને રેગ્યુલર મેન્ટેનન્સ.</p>
+</div>
+</div>
+</section>
+
+<!-- Installation Section -->
+<section id="installation">
+<h2 class="section-title">ઇન્સ્ટોલેશન પ્રોસેસ (Installation Steps)</h2>
+<div class="process-steps">
+<div class="step">
+<div class="step-num">Step 1</div>
+<h3>સાઇટ સર્વે</h3>
+<p>અમારા એન્જિનિયર તમારી જગ્યાની મુલાકાત લઈ યોગ્ય પ્લાન નક્કી કરશે.</p>
+</div>
+<div class="step">
+<div class="step-num">Step 2</div>
+<h3>કાગળકામ & સબસિડી</h3>
+<p>GEB/Discom મંજૂરી અને સબસિડી માટેનું તમામ કાગળકામ અમે કરી આપીશું.</p>
+</div>
+<div class="step">
+<div class="step-num">Step 3</div>
+<h3>ફિટિંગ & ઇન્સ્ટોલેશન</h3>
+<p>અનુભવી ટીમ દ્વારા મજબૂત સ્ટ્રક્ચર અને સોલાર પેનલનું ફિટિંગ.</p>
+</div>
+<div class="step">
+<div class="step-num">Step 4</div>
+<h3>નેટ મીટરિંગ & સ્ટાર્ટ</h3>
+<p>નેટ મીટરિંગ કનેક્શન પૂર્ણ કરી સિસ્ટમ સફળતાપૂર્વક ચાલુ કરવી.</p>
+</div>
+</div>
+</section>
+
+<!-- Contact & Inquiry Section -->
+<section id="contact">
+<h2 class="section-title">કસ્ટમર ઇન્ક્વાયરી & સંપર્ક</h2>
+<div class="contact-container">
+<!-- Left Info -->
+<div class="contact-info">
+<h3>સંપર્ક કરો</h3>
+<p><strong>કંપની:</strong> શ્રદ્ધા સોલાર (Shraddha Solar)</p>
+<p><strong>મોબાઇલ:</strong> +91 98765 43210</p>
+<p><strong>ઇમેઇલ:</strong> info@shraddhasolar.com</p>
+<p><strong>સરનામું:</strong> શ્રદ્ધા સોલાર, મુખ્ય બજાર, અમદાવાદ, ગુજરાત.</p>
+<p>સવારે ૯:૦૦ થી સાંજે ૭:૦૦ સુધી ખુલ્લું.</p>
+</div>
+
+<!-- Right Form -->
+<div class="inquiry-form">
+<form id="solarForm">
+<div class="form-group">
+<input type="text" id="name" placeholder="તમારું પૂરું નામ" required>
+</div>
+<div class="form-group">
+<input type="tel" id="phone" placeholder="મોબાઇલ નંબર" required>
+</div>
+<div class="form-group">
+<select id="type" required>
+<option value="">શેના માટે સોલાર સિસ્ટમ જોઈએ છે?</option>
+<option value="Residential">ઘર માટે (Residential)</option>
+<option value="Commercial">દુકાન/ફેક્ટરી માટે (Commercial)</option>
+<option value="Agriculture">ખેતીવાડી માટે (Agriculture)</option>
+</select>
+</div>
+<div class="form-group">
+<textarea id="message" rows="4" placeholder="તમારું સરનામું અથવા અન્ય પ્રશ્ન..."></textarea>
+</div>
+<button type="submit" class="btn">ઇન્ક્વાયરી મોકલો</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 શ્રદ્ધા સોલાર (Shraddha Solar). સર્વાધિકાર સુરક્ષિત.</p>
+</footer>
+
+<!-- JavaScript for Form Interaction -->
+<script>
+document.getElementById('solarForm').addEventListener('submit', function(e) {
+e.preventDefault();
+const name = document.getElementById('name').value;
+alert('આભાર ' + name + '! તમારી ઇન્ક્વાયરી સફળતાપૂર્વક મળી ગઈ છે. અમે ટૂંક સમયમાં તમારો સંપર્ક કરીશું.');
+this.reset();
+});
+</script>
+</body>
+</html>
